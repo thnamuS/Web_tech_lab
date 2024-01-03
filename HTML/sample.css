@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('https://png.pngtree.com/back_origin_pic/04/48/50/84cd2a9fbc6cbd5522b2f048a56703a8.jpg');
+  background-size: cover;
+  padding: 0;
+  background-repeat: repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+  margin: 20px;
+  box-shadow: 1px 2px #888888;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.universities {
+  list-style: none;
+  padding: 0;
+}
+
+.departments {
+  list-style: none;
+  padding-left: 20px;
+  color: #333;
+}
+
+.courses {
+  list-style: none;
+  padding-left: 20px;
+  color: #666;
+}
+
+a {
+  text-decoration: none;
+  color: #0066ff;
+}
+
+a:hover {
+  text-decoration: underline;
+}

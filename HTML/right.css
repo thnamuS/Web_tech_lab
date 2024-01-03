@@ -1,0 +1,55 @@
+/* Basic reset and styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header styles */
+  
+  /* Main section styles */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .about-section {
+    margin-bottom: 30px;
+  }
+  
+  /* Box layout styles */
+  .box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  .text {
+    flex: 1;
+    padding-left: 20px; /* Adjusting padding here */
+  }
+  
+  .image img {
+    margin-left: 10px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Style the iframe */
+  aside {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+  }
+  
+.blink {
+    animation: blinker 1.5s linear infinite;
+    color: black;
+    font-family:monospace;
+}
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}

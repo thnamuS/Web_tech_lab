@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="register.css">
+    <h1 align="center">
+        Registeration Form
+    </h1>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>
+                <em>
+                    Personal Details
+                </em>
+            </legend>
+            <table border="0" width="85%" height="85%">
+                <tr>
+                    <th>
+                        Name :
+                    </th>
+                    <th>
+                        <input type="text" placeholder="Enter your name">
+                    </th> 
+                </tr>
+                <tr>
+                    <th>
+                        Mail :
+                    </th>
+                    <th>
+                        <input type="email" placeholder="Enter your mail" required>
+                    </th> 
+                </tr>
+                <tr>
+                    <th>
+                        Gender :
+                    </th>
+                    <th>
+                        <input type="radio" name="gen">M
+                        <input type="radio" name="gen">F
+                    </th>
+                <tr>
+                    <th>
+                        Languages :
+                    </th>
+                    <th>
+                        <input type="checkbox" name="lang">Telugu
+                        <input type="checkbox" name="lang">Hindhi
+                        <input type="checkbox" name="lang">English
+                    </th> 
+                </tr>
+                <tr>
+                    <th>
+                        Religion :
+                    </th>
+                    <th>
+                        <select name="rel" required>
+                            <option name="rel" value="Hindhu">Hindhu</option>
+                            <option name="rel" value="Muslim">Muslim</option>
+                            <option name="rel" value="Christian">Christian</option>
+                            <option name="rel" value="OTH">Others</option>
+                    </th>
+                <tr>
+                    <th>
+                        Date of Birth :
+                    </th>
+                    <th>
+                        <input type="date">
+                    </th> 
+                </tr>
+                <tr>
+                    <th>
+                        Mobile Number :
+                    </th>
+                    <th>
+                        <input type="tel" placeholder="Enter your number" required>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        Address :
+                    </th>
+                    <th>
+                        <textarea rows="3" cols="6"></textarea>
+                    </th> 
+                </tr>
+            </table>    
+        </fieldset>
+        <fieldset>
+            <legend><em>Educational information</em></legend><br>
+            <table>
+                <tr>
+                    <th>
+                        Btech % :
+                    </th>
+                    <th>
+                        <input type="number" placeholder="Enter %">
+                    </th> 
+                </tr>
+                <tr>
+                    <th>
+                        Inter Stream :
+                    </th>
+                    <th>
+                        <input type="radio" name="str">CBSE
+                        <input type="radio" name="str">SSC
+                    </th>
+                <tr>
+            </table>
+        </fieldset>
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+</body>
+</html>
