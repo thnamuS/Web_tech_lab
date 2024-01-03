@@ -2,11 +2,9 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    width: auto;
+    height: 40px;;
   }
-  
-  /* Header styles */
-  
-  /* Main section styles */
   main {
     max-width: 1200px;
     margin: 0 auto;
@@ -14,6 +12,7 @@ body {
   }
   
   .about-section {
+    color: #bb00ff;
     margin-bottom: 30px;
   }
   
@@ -24,11 +23,13 @@ body {
     align-items: center;
     border: 1px solid #ccc;
     padding: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
   }
   
   .text {
     flex: 1;
     padding-left: 20px; /* Adjusting padding here */
+    color: #bb00ff;
   }
   
   .image img {
@@ -36,20 +37,3 @@ body {
     max-width: 100%;
     height: auto;
   }
-  
-  /* Style the iframe */
-  aside {
-    border-top: 1px solid #ccc;
-    padding-top: 20px;
-  }
-  
-.blink {
-    animation: blinker 1.5s linear infinite;
-    color: black;
-    font-family:monospace;
-}
-@keyframes blinker {
-    50% {
-        opacity: 0;
-    }
-}
