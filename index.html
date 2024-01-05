@@ -3,7 +3,6 @@
 <head>
   <title>DEPARTMENT DETAILS</title>
   <style>
-    /* Your styles here */
     body {
       font-family: Arial, sans-serif;
       background-color: #f4f4f4;
@@ -14,14 +13,14 @@
       padding: 0;
     }
 
-    .dark-theme {
+    .dark-theme{
       background-image: url('https://th.bing.com/th/id/R.02cdc5809c92b9ee7a416b8922ab2b04?rik=kY6Nb2uRPbq72Q&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f9%2fa%2f0%2f244436.jpg&ehk=Sr1bv3su3aRp5c%2bxj0U8uJyZ4a2qQwrG3npVZ6q2S18%3d&risl=&pid=ImgRaw&r=0');
       background-size: cover;
       background-repeat: repeat;
       margin: 0;
       padding: 0;
       background-color: #333;
-      color:#fff;
+      color:yellow;
     } 
     #themeButton {
       padding :5px 10px;
@@ -42,18 +41,35 @@
     }
   </style>
   <script>
+ /* const right=document.getElementsByName('right_frame');
+    let count=0;
     function changeTheme() {
-      // Toggle the dark-theme class on the body of the main page
       document.body.classList.toggle('dark-theme');
-
-      // Get all iframes and toggle the dark-theme class on their content body
       const frames = document.querySelectorAll('iframe');
       frames.forEach(frame => {
         const frameDoc = frame.contentDocument || frame.contentWindow.document;
         frameDoc.body.classList.toggle('dark-theme');
       });
+      function changeRight(){
+
+      }
 
       // Toggle button color
+      const button = document.getElementById('themeButton');
+      button.classList.toggle('dark-theme-button');
+    }
+    */
+    function changeTheme() {
+      document.body.classList.toggle('dark-theme');
+
+      const frames = document.querySelectorAll('iframe');
+      frames.forEach(frame => {
+        const frameDoc = frame.contentDocument || frame.contentWindow.document;
+        if (frame.getAttribute('name') === 'right_frame') {
+          frameDoc.body.classList.toggle('dark-theme');
+        }
+      });
+1
       const button = document.getElementById('themeButton');
       button.classList.toggle('dark-theme-button');
     }

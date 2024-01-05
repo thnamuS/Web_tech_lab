@@ -11,29 +11,23 @@ body {
     padding: 20px;
   }
   
-  .about-section {
-    color: #bb00ff;
-    margin-bottom: 30px;
-  }
-  
-  /* Box layout styles */
   .box {
     display: flex;
     flex-direction: row;
     align-items: center;
     border: 1px solid #ccc;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
   }
   
-  .text {
-    flex: 1;
-    padding-left: 20px; /* Adjusting padding here */
-    color: #bb00ff;
-  }
   
   .image img {
     margin-left: 10px;
-    max-width: 100%;
-    height: auto;
+    width: 480px;
+    height: 270px;
+  }
+  .dark-theme body {
+    background-color: #333;
+    color: yellow;
+    font-weight: bolder;
   }
